@@ -1,0 +1,33 @@
+
+plugins {
+//  id 'java'
+  id 'application'
+}
+apply plugin : "java"
+
+mainClassName = 'consumer.src.main.java.clients.PageviewsConsumer'
+
+
+repositories {
+    mavenCentral()
+    maven { url 'https://packages.confluent.io/maven/' }
+}
+
+jar {
+    baseName = 'views-consumer'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "consumer.src.main.java.clients.PageviewsConsumer"
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+dependencies {
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '3.1.1'
+    implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+    implementation 'org.apache.kafka:kafka-clients:3.0.0'
+}

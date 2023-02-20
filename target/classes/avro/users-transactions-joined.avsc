@@ -1,0 +1,40 @@
+{
+  "connect.name": "newschema.joined",
+  "fields": [
+    {
+      "name": "registertime",
+      "type": "long"
+    },
+    {
+      "name": "regionid",
+      "type": "string"
+    },
+    {
+      "name": "gender",
+      "type": "string"
+    },
+    {
+      "name": "transaction_id",
+      "type": "long"
+    },
+    {
+      "name": "card_id",
+      "type": "long"
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "purchase_id",
+      "type": "long"
+    },
+    {
+      "name": "store_id",
+      "type": "int"
+    }
+  ],
+  "name": "joined",
+  "namespace": "newschema",
+  "type": "record"
+}

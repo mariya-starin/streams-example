@@ -1,0 +1,13 @@
+newschema/joined$Builder.class
+org/example/SpecificAvroJoinedExample.class
+consumer/src/main/java/clients/PageviewsConsumer.class
+ksql/users.class
+ksql/users$Builder.class
+org/example/utils/Globals.class
+org/example/Example.class
+datagen/example/transactions$Builder.class
+newschema/joined.class
+org/example/utils/Utils.class
+org/example/SpecificAvroExample.class
+org/example/AvroGenericExample.class
+datagen/example/transactions.class
